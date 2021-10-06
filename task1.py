@@ -2,7 +2,6 @@ import time
 start = time.time()
 planets, p = map(int, input().split(' '))
 param = list(map(int, input().split(' ')))
-# sorted(names, key=str.lower)
 s = sum(param)
 names = []
 scores = []
