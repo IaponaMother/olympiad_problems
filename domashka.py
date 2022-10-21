@@ -5,6 +5,6 @@ f = input() * 10
 r = ''
 for i in range(len(s)):
     r += alf[(alf.index(s[i]) + alf.index(f[i])) % 32]
-    # r += alf[(alf.index(s[i]) + alf.index(f[i]) + 1) % 32], я хз зачем здесь + 1, хрень, а не задачник
+    # r += alf[(alf.index(s[i]) + alf.index(f[i]) + 1) % 32], я хз зачем здесь + 1, хрень, а не задачник 
     # r += alf[alf.index(s[i]) - alf.index(f[i]) - 1], 18 задание со всеми буквами алфавита
 print(r)
