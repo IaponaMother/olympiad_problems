@@ -29,3 +29,4 @@ plt.plot(x, y)
 for i in range(r):
     plt.scatter(x[i], y[i])
 plt.show()
+# P = lambda x_: (f(x_ - 2 * q) - 8 * f(x_ - q) + 8 * f(x_ + q) - f(x_ + 2 * q)) / (12 * q)
