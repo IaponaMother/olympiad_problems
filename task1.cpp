@@ -24,7 +24,6 @@
 //         }
         
 //     }
-
 #include <iostream>
 
 using namespace std;
@@ -43,16 +42,18 @@ int main()
     for(int i = 0; i < n; i++){
         cin>>a[i];
     }
-    
-    for(int i = 0; i < n; i+=k){
-        if(p + a[i] < 0){
-            p = -1;
-            break;
+    int t = 0;
+    for(int i = 0; i < n; i++){
+        if (t >= i && i <= t + k && a[i] > 0){
+            p += a[i];
+            t = i + 1;
+            
+        } 
+        else {
+            t += 1;
+            continue;
         }
         
-        else{
-            p += a[i];
-        }
     }
     cout<<p;
 }
